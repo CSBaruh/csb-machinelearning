@@ -19,4 +19,4 @@ with st.expander('Data'):
   y
 # order_date,product_id,category_id,category_name,product_name,quantity,price,payment_method,city,review_score,gender,age
 with st.expander('Data Visualization'):
-  st.scatter_chart(data=df, x='product_name', y= 'order_date', color = 'category_name')
+  st.scatter_chart(data=df, x='product_name', y= left('order_date', 7), color = 'category_name')
