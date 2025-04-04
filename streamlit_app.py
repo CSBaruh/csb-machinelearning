@@ -11,7 +11,7 @@ with st.expander('Data'):
   df
 
   st.write('**X**')
-  X = df.drop('product_name', axis=6)
+  X = df.drop('product_name', axis=1)
   X
 
   st.write('**y**')
