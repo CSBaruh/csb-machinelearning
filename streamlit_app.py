@@ -9,3 +9,11 @@ with st.expander('Data'):
   st.write('**Raw data**')
   df = pd.read_csv('https://raw.githubusercontent.com/CSBaruh/Datas/refs/heads/main/synthetic_online_retail_data.csv')
   df
+
+  st.write('**X**')
+  X = df.drop('product_name', axis=7)
+  X
+
+  st.write(**y**)
+  y = df.product_name
+  y
