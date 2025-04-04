@@ -11,12 +11,12 @@ with st.expander('Data'):
   df
 
   st.write('**X**')
-  X = df.drop('quantity', axis=1)
+  X = df.drop('category_name', axis=1)
   X
 
   st.write('**y**')
-  y = df.product_name
+  y = df.category_name
   y
 # order_date,product_id,category_id,category_name,product_name,quantity,price,payment_method,city,review_score,gender,age
 with st.expander('Data Visualization'):
-  st.scatter_chart(data=df, x='product_name', y= 'order_date')
+  st.scatter_chart(data=df, x='product_name', y= 'order_date', color= 'category_name')
